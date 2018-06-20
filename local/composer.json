@@ -1,0 +1,38 @@
+{
+  "name": "pdir/manifest-generator",
+  "type": "library",
+  "description": "Manifest Generator",
+  "license": "MIT",
+  "keywords": ["manifest", "web", "app", "manifest-generator", "json", "browser"],
+  "authors": [
+    {
+      "name": "Mathias Arzberger",
+      "homepage": "https://pdir.de",
+      "email" : "develop@pdir.de",
+      "role" : "Developer"
+    }
+  ],
+  "support" : {
+    "email" : "develop@pdir.de",
+    "issues" : "https://github.com/pdir/manifest-generator/issues",
+    "source" : "https://github.com/pdir/manifest-generator"
+  },
+  "require": {
+    "php": "^7.1"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.4",
+    "phpunit/phpunit": "^6.2",
+    "satooshi/php-coveralls": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pdir\\ManifestGenerator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pdir\\ManifestGenerator\\Tests\\": "tests/"
+    }
+  }
+}
