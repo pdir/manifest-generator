@@ -215,7 +215,7 @@ class ManifestFields implements \IteratorAggregate
      */
     public function matchToUpper($str): string
     {
-        $str = implode('', array_map(ucfirst, explode('_', $str)));
+        $str = implode('', array_map('ucfirst', explode('_', $str)));
         return lcfirst($str);
     }
 

@@ -54,7 +54,7 @@ class ManifestGenerator
     public function toArray(): array
     {
         return [
-            'backgroundColor' => $this->fields->getBackgroundColor(),
+            'background_color' => $this->fields->getBackgroundColor(),
             'description' => $this->fields->getDescription(),
             'dir' => $this->fields->getDir(),
             'display' => $this->fields->getDisplay(),
@@ -62,12 +62,12 @@ class ManifestGenerator
             'lang' => $this->fields->getLang(),
             'name' => $this->fields->getName(),
             'orientation' => $this->fields->getOrientation(),
-            'preferRelatedApplications' => $this->fields->getPreferRelatedApplications(),
-            'relatedApplications' => $this->fields->getRelatedApplications(),
+            'prefer_related_applications' => $this->fields->getPreferRelatedApplications(),
+            'related_applications' => $this->fields->getRelatedApplications(),
             'scope' => $this->fields->getScope(),
             'short_name' => $this->fields->getShortName(),
-            'startUrl' => $this->fields->getStartUrl(),
-            'themeColor' => $this->fields->getThemeColor(),
+            'start_url' => $this->fields->getStartUrl(),
+            'theme_color' => $this->fields->getThemeColor(),
         ];
     }
 }
